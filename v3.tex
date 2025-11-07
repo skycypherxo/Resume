@@ -1,0 +1,293 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage[table,dvipsnames]{xcolor}
+\usepackage{charter}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
+
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.2in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0.1in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that the generated PDF is machine readable/ATS parsable.
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \vspace{-2pt}\textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+% Compact single-line description (no extra indent) used for short sections like Volunteering
+\newcommand{\resumeBrief}[1]{\vspace{-4pt}\begin{itemize}[leftmargin=0.0in,label={}]\item\small{#1 \vspace{-2pt}}\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\huge \scshape Vaishnavi Poti} \\ \vspace{5pt}
+    \small
+    \href{https://github.com/skycypherxo}{github.com/skycypherxo} $|$ \href{https://www.linkedin.com/in/vaishnavi-v-p/}{linkedin.com/in/vaishnavi-v-p/} $|$ \href{mailto:potivaishnavi21@gmail.com}{potivaishnavi21@gmail.com}
+    \vspace{-8pt}
+\end{center}
+
+% Education
+\section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {University of Mumbai -- Thadomal Shahani Engineering College}{Expected: June 2026}
+            {Bachelor of Engineering (Artificial Intelligence and Data Science)   (Current GPA: 8.83 / 10)}{Mumbai}
+            \resumeItemListStart
+                \resumeItem{Computer Networks, Operating Systems,  Database Management, Deep Learning, NLP}
+            \resumeItemListEnd
+
+        \resumeSubheading
+            {S.I.E.S College of Arts, Science and Commerce}{March 2022}
+            {Higher Secondary School Certificate (Percentage: 86.5)}{Mumbai, India}
+            \resumeItemListStart
+                \resumeItem{Courses: Computer Science, Physics, Chemistry, Mathematics}
+            \resumeItemListEnd
+
+        \resumeSubheading
+            {Swami Vivekanand High School }{March 2020}
+            {Secondary School Certificate   (Percentage: 93.4)}{Mumbai, India}
+    \resumeSubHeadingListEnd
+
+% Internships
+\section{Internships}
+
+\resumeSubHeadingListStart
+\resumeSubheading
+    {Government of Maharashtra}{November 2024 -- May 2025 \href{https://drive.google.com/file/d/1qbBfanYD9CQLAFl07efEwsPnJ0FCqHbV/view?usp=drive_link}{\textcolor{blue}{[Certificate]}}}
+    {Web Team Lead and Fullstack Developer }{Mumbai}
+  \resumeItemListStart
+    \resumeItem{Led a team of 8 to build the digital platform for the Maha CSR Summit 2025, including a real-time slot booking system and PhonePe payment integration.}
+    \resumeItem{Architected and deployed scalable backend systems using AWS Amplify, DynamoDB, and Route 53, ensuring reliability during high-traffic event periods.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Dalsey, Hillblom and Lynn (DHL)}{June 2024 -- July 2024 \href{https://drive.google.com/file/d/1dtPS6S_dDL82myHAHvV0trkt0f50VSxs/view?usp=drive_link}{\textcolor{blue}{[Certificate]}}}
+            {Data Analytics Intern }{Andheri, Mumbai}
+              \resumeItemListStart
+    \resumeItem{Built interactive Power BI dashboards to analyze delivery efficiency, route performance, and operational cost metrics across regions.}
+    \resumeItem{Automated reporting workflows using Power Automate, improving operational visibility and contributing to a 15\% efficiency increase.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+    
+
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Outlier AI}{Part-Time, 2023 -- 2024}
+            {RLHF Trainer}{Remote}
+  \resumeItemListStart
+    \resumeItem{Evaluated and refined model outputs across text and multimodal tasks using Reinforcement Learning from Human Feedback (RLHF).}
+    \resumeItem{Provided structured annotations and comparative scoring to improve reasoning, alignment, and user-response quality.}
+  \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+% Skills
+\section{Skills}
+\resumeSubHeadingListStart
+    \resumeItem{\textbf{Frameworks}: React.js, Next.js, Flask}
+    \resumeItem{\textbf{Languages and Technologies}: Python, JavaScript (JS), C, Java, HTML, CSS}
+    \resumeItem{\textbf{Databases}: MySQL, MongoDB, Firebase, Pinecone, DynamoDB}
+    \resumeItem{\textbf{Platforms}: GitHub, Firebase}
+    \resumeItem{\textbf{Version Control}: Git}
+    \resumeItem{\textbf{CI/CD}: GitHub Actions, AWS Amplify}
+    \resumeItem{\textbf{ML Frameworks}: Tensorflow, Pytorch, Scikit-Learn, Hugging Face, Langchain, LangGraph}
+    \resumeItem{\textbf{Tools}: Power BI, Power Automate, Kali Linux (Burpsuite, Nmap, SQLmap)}
+\resumeSubHeadingListEnd
+
+% Projects
+\section{Projects}
+ \resumeSubHeadingListStart
+
+\resumeProjectHeading
+  {\textbf{\normalsize{Multi-Agent System for Adaptive Production Scheduling}} $|$ \emph{LangChain, LangGraph, CrewAI, Python}}{}
+  \resumeItemListStart
+    \resumeItem{Developed and compared three multi-agent architectures (pure Python, LangChain, CrewAI/LangGraph) for dynamic job scheduling and resource allocation.}
+    \resumeItem{Implemented custom agent communication protocols, role-based agent teams, and adaptive state routing to handle delays, machine downtime, and priority shifts.}
+    \resumeItem{Benchmarked throughput, idle time, and rescheduling latency to evaluate performance trade-offs across each MAS design.}
+  \resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{\normalsize{Custom University-Specific Small Language Model (SLM)}} $|$ \emph{Python, NumPy}}{}
+  \resumeItemListStart
+    \resumeItem{Built a transformer-based Small Language Model entirely from first principles, including custom tokenizer, attention layers, and gradient updates.}
+    \resumeItem{Trained on curated university-specific datasets to answer academic, admission, and campus-related queries with improved contextual accuracy.}
+    \resumeItem{Achieved higher relevance and reduced hallucination compared to retrieval-only baselines.}
+  \resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{\normalsize{InkChat}} $|$ \emph{Next.js, TypeScript, WebSockets}}{Jul 2022 -- Nov 2022}
+  \resumeItemListStart
+    \resumeItem{Developed a real-time collaborative whiteboard with simultaneous drawing, annotation, and chat interactions.}
+    \resumeItem{Implemented synchronized canvas updates with low-latency WebSocket communication for multi-user consistency.}
+    \resumeItem{Optimized rendering and data flow to ensure smooth performance during large collaborative sessions.}
+  \resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{\normalsize{Farmissan}} $|$ \emph{React.js, Firebase}}{}
+  \resumeItemListStart
+    \resumeItem{Built a farm-to-consumer marketplace enabling direct sales and improved revenue for producers.}
+    \resumeItem{Implemented real-time product listings, geolocation-based discovery, and secure authentication/workflows using Firebase services.}
+    \resumeItem{Added review and feedback features to increase trust and improve repeat user engagement.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Extracurriculars}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {AceRyx}{Aug 2025 -- Present}
+  {Lead Founder \& Developer}{Remote}
+  \resumeItemListStart
+    \resumeItem{Found and lead a services platform offering custom website development, chatbot solutions, and digital consulting services.}
+    \resumeItem{Spearhead end-to-end project delivery from client consultation to implementation, focusing on tailored AI-driven solutions.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Competitive Programming \& Hackathons}{2023 -- 2025}
+  {Technical Lead}{Mumbai, India}
+  \resumeItemListStart
+    \resumeItem{Participated in 10+ national-level hackathons, securing multiple top-3 finishes with a focus on AI/ML-driven problem solving.}
+
+    \resumeItem{\textbf{NeedForCode 3.0 Hackathon (Winner, 2024)}}
+    \begin{itemize}[leftmargin=1.8em, label={--}]
+      \item Led development of \textit{DigiDaani}, a MERN-based ration distribution platform with real-time inventory tracking.
+      \item Implemented secure authentication and 360° face verification using MediaPipe to prevent identity misuse.
+    \end{itemize}
+
+    \resumeItem{\textbf{Codeissance (First Runner-Up, Sept 2024)}}
+    \begin{itemize}[leftmargin=1.8em, label={--}]
+      \item Built \textit{Place-U}, a placement and interview-preparation platform with ML-driven interview feedback and resume scoring.
+      \item Implemented mock interview simulations, chatbot workflows, and resume-builder modules.
+    \end{itemize}
+
+    \resumeItem{\textbf{AI Challenge Competition (Second Place, 2024)}}
+    \begin{itemize}[leftmargin=1.8em, label={--}]
+      \item Created analytical dashboards and cybersecurity risk assessment reports highlighting AI-driven anomaly detection.
+    \end{itemize}
+
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+\section{Volunteering}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Science O Mania Science Fair}{Nov 2025}
+  {Student Mentor}{Mumbai, India}
+  \begin{itemize}[leftmargin=1.8em, label={--}]
+    \item Guided Grade 12 students in developing a hardware-based soil monitoring and analysis system for exhibition.
+  \end{itemize}
+
+\resumeSubheading
+  {Social Media Bots (Open Source)}{2023 -- 2024}
+  {Developer}{Remote}
+  \begin{itemize}[leftmargin=1.8em, label={--}]
+    \item Developed and maintained scalable automation bots for Discord and Reddit communities serving 23M+ collective users.
+  \end{itemize}
+
+\resumeSubheading
+  {InAmigos Foundation}{\href{https://drive.google.com/file/d/1Kmgj9lRByNkx7EB3o7pfIt0a6cJ9eTru/view?usp=drive_link}{\textcolor{blue}{[Certificate]}}} 
+  {Volunteer}{Mumbai, India}
+  \begin{itemize}[leftmargin=1.8em, label={--}]
+    \item Assisted in planning and executing social welfare programs supporting marginalized communities.
+  \end{itemize}
+
+\resumeSubheading
+  {Ratna Nidha Charitable Trust}{} 
+  {Book Collection Drive Organizer}{Mumbai, India}
+  \begin{itemize}[leftmargin=1.8em, label={--}]
+    \item Led a community-driven book donation initiative to expand educational access for underprivileged students.
+  \end{itemize}
+
+\resumeSubHeadingListEnd
+
+
+% -----------RELATED COURSEWORK AND CERTIFICATES-----------
+\section{Related Coursework and Certificates}
+\resumeSubHeadingListStart
+    \resumeSubheading{Certificates}{}{}{}
+    \resumeItemListStart
+    \resumeItem{\href{https://drive.google.com/file/d/1eRMrkQsVajNq8gmjKuh5S0TzYjHSdl7L/view}{Stock Market and Finance}}
+    \resumeItem{\href{https://drive.google.com/file/d/1wAHCC7eUFHxw6MSohqXeQE-LyX5rhF1G/view}{Python Programming}}
+    \resumeItem{\href{https://drive.google.com/file/d/1knJCjygqzEXNLz81BkYtJ9mMH8AjFFw6/view}{Web Development}}
+    \resumeItem{\href{https://drive.google.com/drive/folders/1vBEMoLjvOWieMp81bUmmTmJtVjrxEBoF}{Data Analytics with Python}}
+    \resumeItem{\href{https://www.cloudskillsboost.google/public_profiles/d5634d36-991d-4605-af7e-1bc91d882319}{Google Cloud}}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% -----------ADDITIONAL SKILLS-----------
+\section{Additional Skills}
+\resumeSubHeadingListStart
+    \resumeItem{\textbf{Languages}: Fluent in English, Hindi, Marathi, Kannada, and Tulu; Speaking knowledge of French}
+\resumeSubHeadingListEnd
+
+\end{document}
+
