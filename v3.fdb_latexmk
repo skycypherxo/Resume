@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1762496031.12506 "c:/Users/potiv/Desktop/Resume/v3.tex" "v3.pdf" "v3" 1762496032.39836 0
+["pdflatex"] 1762525980.47799 "c:/Users/potiv/Desktop/Resume/v3.tex" "v3.pdf" "v3" 1762525981.67497 0
   "C:/Users/potiv/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1745070637.2953 420752 152577a416ea5e7f3c5d4fc7e2dd873a ""
   "C:/Users/potiv/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1725621760.24667 24265332 eda0d91f8a764a99f3f2826d3e8cfbc1 ""
   "C:/Users/potiv/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 1194fb36dfcb11d9ae9802f2b00b60a3 ""
@@ -92,9 +92,9 @@
   "C:/Users/potiv/AppData/Local/Programs/MiKTeX/tex/latex/tools/verbatim.sty" 1718356376 7532 d2e1111e17bfebb1607d8ffa779705ec ""
   "C:/Users/potiv/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/potiv/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/potiv/Desktop/Resume/v3.tex" 1762496030.3077 13250 72a1dfe0552890404b83a8bafd7ce904 ""
-  "v3.aux" 1762496032.16888 1170 7bf38d9299293c2738d34d525f423d81 "pdflatex"
-  "v3.out" 1762496032.17088 926 c7174acbfe49454617a567f723d26960 "pdflatex"
+  "c:/Users/potiv/Desktop/Resume/v3.tex" 1762525979.63737 13821 0c380fec5c64c4552e2d832acedc4eb7 ""
+  "v3.aux" 1762525981.44862 1170 7bf38d9299293c2738d34d525f423d81 "pdflatex"
+  "v3.out" 1762525981.44962 926 c7174acbfe49454617a567f723d26960 "pdflatex"
   (generated)
   "v3.aux"
   "v3.log"
