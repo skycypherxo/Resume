@@ -1,0 +1,55 @@
+name: Compile LaTeX Resume
+
+on:
+  push:
+    branches: [ main ]
+    paths: 
+      - '*.tex'
+      - '*.cls'
+      - '*.sty'
+  pull_request:
+    branches: [ main ]
+    paths: 
+      - '*.tex'
+      - '*.cls'
+      - '*.sty'
+
+jobs:
+  compile-latex:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup LaTeX environment
+      uses: xu-cheng/latex-action@v3
+      with:
+        root_file: v3.tex
+        args: -pdf -interaction=nonstopmode -halt-on-error
+        
+    - name: Upload PDF artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: resume-pdf
+        path: v3.pdf
+        retention-days: 90
+        
+    - name: Create Release (on main branch only)
+      if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: resume-${{ github.run_number }}
+        name: Resume PDF - Build ${{ github.run_number }}
+        body: |
+          Automatically generated PDF from LaTeX source
+          
+          **Changes in this build:**
+          ${{ github.event.head_commit.message }}
+          
+          **Commit:** ${{ github.sha }}
+        files: v3.pdf
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
