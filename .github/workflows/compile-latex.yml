@@ -37,7 +37,8 @@ jobs:
         
     - name: Create Release (on main branch only)
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-      uses: softprops/action-gh-release@v1
+      continue-on-error: true
+      uses: softprops/action-gh-release@v2
       with:
         tag_name: resume-${{ github.run_number }}
         name: Resume PDF - Build ${{ github.run_number }}
@@ -51,6 +52,7 @@ jobs:
         files: v3.pdf
         draft: false
         prerelease: false
+        make_latest: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
